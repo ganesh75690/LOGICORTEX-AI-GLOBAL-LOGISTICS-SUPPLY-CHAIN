@@ -921,6 +921,9 @@ Additional capabilities can include:
 
 <img width="1536" height="1024" alt="WhatsApp Image 2026-04-28 at 2 01 30 AM" src="https://github.com/user-attachments/assets/1c78de94-0eea-4b48-9bca-aac7ca4f5ec4" />
 
+<img width="1536" height="1024" alt="WhatsApp Image 2026-04-28 at 1 34 44 AM" src="https://github.com/user-attachments/assets/d3b4e15d-1f89-4e39-8f04-0c71724d4da7" />
+
+
 <img width="1919" height="934" alt="image" src="https://github.com/user-attachments/assets/3812603c-2edf-499e-8da1-84ef46720064" />
 
 <img width="1915" height="938" alt="image" src="https://github.com/user-attachments/assets/eeac7874-a6a9-40f5-bf98-83ff56bc7743" />
