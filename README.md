@@ -163,7 +163,24 @@ The scheduling engine can support global operations involving:
 - Distributed resources and teams
 
 ---
+## 🤝 International Collaboration
 
+LOGICORTEX ACO is designed around modular architecture, making it suitable for integration with distributed teams, logistics providers, suppliers, and technology platforms operating across different regions.
+
+Its API-driven architecture enables scheduling intelligence to be integrated into existing enterprise logistics and supply chain systems.
+
+---
+## 🗺️ Global Deployment Vision
+
+LOGICORTEX ACO can serve as a scheduling intelligence layer for distributed logistics networks.
+
+A future global deployment can connect:
+
+**Suppliers → Manufacturing → Ports → Warehouses → Transportation → Distribution → Customers**
+
+across multiple regions while continuously optimizing dependencies, resources, routes, and operational schedules.
+
+---
 ## 🚀 How to Run
 
 ### Clone the Repository
