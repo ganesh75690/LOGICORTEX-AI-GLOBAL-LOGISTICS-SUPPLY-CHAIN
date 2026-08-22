@@ -853,6 +853,8 @@ Additional capabilities can include:
 
 <img width="1915" height="938" alt="image" src="https://github.com/user-attachments/assets/eeac7874-a6a9-40f5-bf98-83ff56bc7743" />
 
+<img width="1919" height="931" alt="image" src="https://github.com/user-attachments/assets/d2d027c8-c2db-41ef-a352-5bd544876de3" />
+
 <img width="1036" height="588" alt="Screenshot 2026-04-27 234147" src="https://github.com/user-attachments/assets/48c19331-2ab7-4dfb-9787-7858311b4d10" />
 
 <img width="1915" height="925" alt="image" src="https://github.com/user-attachments/assets/99da0ed4-c4bf-469c-b368-95f31da40209" />
