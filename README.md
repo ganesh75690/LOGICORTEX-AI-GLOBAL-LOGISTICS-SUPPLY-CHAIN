@@ -147,6 +147,22 @@ Key international capabilities include:
 
 The goal is to provide a scheduling intelligence layer capable of supporting **local operations today and globally distributed supply chains tomorrow.**
 ---
+## 🌐 Global Supply Chain Coverage
+
+LOGICORTEX ACO is designed for complex supply chain environments operating across multiple regions, countries, and transportation networks.
+
+The scheduling engine can support global operations involving:
+
+- International suppliers and manufacturers
+- Multi-country warehouse networks
+- Cross-border transportation
+- Global distribution centers
+- Port and freight operations
+- Regional delivery networks
+- Multi-time-zone scheduling
+- Distributed resources and teams
+
+---
 
 ## 🚀 How to Run
 
