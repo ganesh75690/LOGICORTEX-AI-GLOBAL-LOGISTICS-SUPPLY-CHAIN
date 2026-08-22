@@ -181,6 +181,25 @@ A future global deployment can connect:
 across multiple regions while continuously optimizing dependencies, resources, routes, and operational schedules.
 
 ---
+## 💼 Business Scenario
+
+Modern supply chains operate through thousands of interconnected activities involving suppliers, warehouses, transportation, inventory, manufacturing, and deliveries. When these activities are scheduled sequentially or inefficiently, a delay in one critical task can create a chain reaction across the entire operation.
+
+Consider a global logistics company managing **100+ active jobs across multiple warehouses, vehicles, suppliers, and delivery operations**.
+
+A major shipment delay occurs at one warehouse.
+
+Without intelligent scheduling:
+
+**Disruption → Task Delays → Dependency Bottlenecks → Resource Conflicts → Longer Critical Path → Operational Delay**
+
+LOGICORTEX ACO transforms this process into:
+
+**Disruption → Impact Analysis → Critical Path Detection → Parallelization → Conflict Resolution → Optimized Schedule → Recovery**
+
+The system identifies which tasks are actually controlling the overall schedule instead of treating every task
+
+---
 ## 🚀 How to Run
 
 ### Clone the Repository
