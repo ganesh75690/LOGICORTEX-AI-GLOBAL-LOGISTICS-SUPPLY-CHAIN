@@ -129,6 +129,24 @@ Together:
 ```
 
 ---
+## 🌍 International Scalability
+
+LOGICORTEX ACO is designed with global-scale scheduling and logistics operations in mind. Its optimization approach can be adapted to complex international supply chains involving multiple countries, time zones, warehouses, transportation networks, suppliers, and resource constraints.
+
+The architecture supports scalable scheduling across distributed operations while maintaining dependency relationships, resource availability, deadlines, and disruption recovery.
+
+Key international capabilities include:
+
+- 🌐 **Multi-Region Scheduling** — Coordinate operations across geographically distributed locations.
+- 🕐 **Time-Zone Aware Planning** — Support schedules across different local time zones.
+- 🚚 **Cross-Border Logistics** — Adapt scheduling to international transportation and shipment workflows.
+- 🏭 **Global Resource Coordination** — Optimize tasks across multiple warehouses, suppliers, and operational hubs.
+- ⚠️ **International Disruption Recovery** — Recalculate schedules when delays, route disruptions, or resource failures affect global operations.
+- 📈 **Scalable Optimization** — Designed to handle increasing workloads and complex dependency networks.
+- 🔄 **Real-Time Adaptation** — Continuously update schedules as operational conditions change.
+
+The goal is to provide a scheduling intelligence layer capable of supporting **local operations today and globally distributed supply chains tomorrow.**
+---
 
 ## 🚀 How to Run
 
