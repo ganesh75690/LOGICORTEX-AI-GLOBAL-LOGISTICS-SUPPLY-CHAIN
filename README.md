@@ -130,6 +130,39 @@ Together:
 
 ---
 
+## 🚀 How to Run
+
+### Clone the Repository
+
+git clone https://github.com/ganesh75690/LOGICORTEX-AI-GLOBAL-LOGISTICS-SUPPLY-CHAIN.git
+
+cd LOGICORTEX-AI-GLOBAL-LOGISTICS-SUPPLY-CHAIN
+
+### Install Dependencies
+
+npm install
+
+### Start the Development Server
+
+npm run dev
+
+### Open the Application
+
+Open the local URL shown in the terminal:
+
+http://localhost:5173
+
+### Explore LOGICORTEX ACO
+
+Navigate to:
+
+**Smart Dispatch → ACO Optimizer**
+
+
+> **Note:** LOGICORTEX ACO uses deterministic synthetic logistics data for reproducible benchmarking. All performance results are generated from actual execution and are not hardcoded.
+
+---
+
 # ⚡ AI Critical Path Scheduler™
 
 Instead of unnecessarily executing every scheduling operation sequentially:
