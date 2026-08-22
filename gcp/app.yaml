@@ -1,0 +1,56 @@
+# Google Cloud App Engine configuration for Frontend
+runtime: nodejs20
+
+# Instance class and scaling
+instance_class: F2
+automatic_scaling:
+  min_instances: 1
+  max_instances: 10
+  cpu_utilization:
+    target_utilization: 0.65
+
+# Environment variables
+env_variables:
+  NODE_ENV: production
+  VITE_API_URL: https://backend-dot-YOUR_PROJECT_ID.appspot.com
+  VITE_FIREBASE_API_KEY: AIzaSyDemoKeyForWebClient
+  VITE_FIREBASE_AUTH_DOMAIN: supply-chain-demo-5d7cd.firebaseapp.com
+  VITE_FIREBASE_PROJECT_ID: supply-chain-demo-5d7cd
+  VITE_FIREBASE_STORAGE_BUCKET: supply-chain-demo-5d7cd.appspot.com
+  VITE_FIREBASE_MESSAGING_SENDER_ID: '111142307241411068242'
+  VITE_FIREBASE_APP_ID: '1:111142307241411068242:web:demo-app-id'
+
+# Handlers for serving files
+handlers:
+  # Serve static assets
+  - url: /assets
+    static_dir: dist/assets
+    secure: always
+    
+  # Serve images
+  - url: /.*\.(png|jpg|jpeg|gif|ico|svg|webp)$
+    static_files: dist/\1
+    upload: dist/.*\.(png|jpg|jpeg|gif|ico|svg|webp)$
+    secure: true
+    
+  # Serve all other requests from index.html (SPA routing)
+  - url: /.*
+    static_files: dist/index.html
+    upload: dist/index.html
+    secure: always
+
+# Health check
+readiness_check:
+  path: /
+  check_interval_sec: 5
+  timeout_sec: 4
+  failure_threshold: 2
+  success_threshold: 2
+
+# Security settings
+secure: always
+
+# Deployment settings
+deployment:
+  files: 
+    dist/**: true

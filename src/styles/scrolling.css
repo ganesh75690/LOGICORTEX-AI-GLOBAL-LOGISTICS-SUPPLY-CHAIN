@@ -1,0 +1,338 @@
+/* Global Scrolling Styles - Make Everything Scrollable */
+
+/* Base HTML and Body */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Root container */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Scrollable container base */
+.scrollable-container {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Main app container */
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Component containers */
+.component-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Dashboard containers */
+.dashboard-container {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Grid containers */
+.grid-container {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Card containers */
+.card-container {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+/* Form containers */
+.form-container {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Table containers */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Modal containers */
+.modal-container {
+  width: 100%;
+  max-height: 90vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Sidebar containers */
+.sidebar-container {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Content area */
+.content-area {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .component-wrapper,
+  .dashboard-container,
+  .grid-container,
+  .card-container,
+  .form-container,
+  .table-container,
+  .modal-container,
+  .content-area {
+    padding: 10px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+/* Tablet responsive */
+@media (max-width: 1024px) {
+  .dashboard-container {
+    max-width: 100%;
+    padding: 15px;
+  }
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c1c1c1 #f1f1f1;
+}
+
+/* Hide scrollbar for clean look but keep functionality */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent horizontal overflow */
+.prevent-overflow {
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Ensure all images and media don't cause overflow */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Text overflow handling */
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Flex containers */
+.flex-container {
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Grid layouts with scrolling */
+.scrollable-grid {
+  display: grid;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Tab content containers */
+.tab-content {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 400px;
+}
+
+/* Analytics dashboard */
+.analytics-dashboard {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Predictive Maintenance specific styles */
+.predictive-maintenance-container {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.maintenance-form {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.maintenance-results {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Vision AI specific styles */
+.vision-ai-container {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* API Test specific styles */
+.api-test-container {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    overflow: visible !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  ::-webkit-scrollbar-thumb {
+    background: #000;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #fff;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
