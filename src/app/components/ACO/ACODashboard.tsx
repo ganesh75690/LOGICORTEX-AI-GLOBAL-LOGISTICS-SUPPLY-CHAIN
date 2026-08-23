@@ -412,30 +412,6 @@ export const ACODashboard: React.FC<ACODashboardProps> = ({ shipmentId = 'SHP-00
           </div>
         </div>
 
-        {/* Challenge #400 Evidence Panel */}
-        <div className="bg-gradient-to-r from-[#00F5C4]/10 to-blue-500/10 rounded-xl p-4 border border-[#00F5C4]/30 mb-6">
-          <div className="flex items-center gap-3 mb-3">
-            <Activity className="w-5 h-5 text-[#00F5C4]" />
-            <h3 className="font-bold text-white">CHALLENGE #400</h3>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-            <div>
-              <div className="text-slate-400 mb-1">Problem</div>
-              <div className="text-white font-medium">Scheduling: Critical Path Speedup</div>
-            </div>
-            <div>
-              <div className="text-slate-400 mb-1">Solution</div>
-              <div className="text-white font-medium">LOGICORTEX ACO - Parallel execution with critical-path optimization</div>
-            </div>
-            <div>
-              <div className="text-slate-400 mb-1">Measured Improvement</div>
-              <div className="text-[#00F5C4] font-bold">
-                {round1Metrics && round2Metrics ? `${calculateImprovement()}% faster` : 'Run benchmark to measure'}
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Live KPI Cards */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-3 mb-6">
           <div className="bg-slate-800 rounded-lg p-3 border border-slate-700">
@@ -1316,14 +1292,15 @@ export const ACODashboard: React.FC<ACODashboardProps> = ({ shipmentId = 'SHP-00
                   🔴 Critical Path
                 </h4>
                 {(() => {
-                  const graph = acoEngine.getGraphEngine().buildSchedulingGraph(shipmentId);
+                  const graphEngine = acoEngine.getGraphEngine();
+                  const graph = graphEngine.buildSchedulingGraph(shipmentId);
                   const criticalPath = graph.criticalPath;
                   const criticalPathNames = criticalPath.map(taskId => {
                     const task = graph.tasks.get(taskId);
                     return task ? task.name : taskId;
                   }).join(' → ');
                   
-                  const parallelGroups = graph.getParallelizableTasks();
+                  const parallelGroups = graphEngine.getParallelizableTasks();
                   const parallelizableCount = parallelGroups.reduce((sum, group) => sum + group.length, 0);
                   const totalTasks = graph.tasks.size;
                   const parallelizablePercent = totalTasks > 0 ? (parallelizableCount / totalTasks * 100).toFixed(0) : '0';

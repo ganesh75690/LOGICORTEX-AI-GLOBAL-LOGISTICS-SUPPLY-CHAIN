@@ -77,7 +77,7 @@ export default function App() {
 
   useEffect(() => {
     // Development mode: Auto-login for easier testing
-    const devMode = true; // Set to false for production security
+    const devMode = false; // Set to false for production security
     if (devMode) {
       setUser({
         userId: 'dev-admin',
