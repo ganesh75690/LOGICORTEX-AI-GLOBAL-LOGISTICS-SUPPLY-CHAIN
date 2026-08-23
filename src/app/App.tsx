@@ -76,10 +76,23 @@ export default function App() {
   const [showOTPVerification, setShowOTPVerification] = useState(false);
 
   useEffect(() => {
-    // Force login on every refresh for security
-    // Remove any stored session and always show login page
-    localStorage.removeItem('smartchain_user');
-    setUser(null);
+    // Development mode: Auto-login for easier testing
+    const devMode = true; // Set to false for production security
+    if (devMode) {
+      setUser({
+        userId: 'dev-admin',
+        email: 'admin@logicortex.ai',
+        role: 'admin',
+        name: 'Admin User',
+        loginTime: Date.now()
+      });
+      setHasSeenIntro(true);
+      setHasSeenWelcome(true);
+    } else {
+      // Force login on every refresh for security
+      localStorage.removeItem('smartchain_user');
+      setUser(null);
+    }
     setMounted(true);
   }, []);
 

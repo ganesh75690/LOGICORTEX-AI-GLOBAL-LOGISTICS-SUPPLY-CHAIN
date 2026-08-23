@@ -23,6 +23,7 @@ import {
   MessageSquare,
   BarChart3,
   Target,
+  Lock,
   Activity,
   Search,
   Filter,
@@ -877,7 +878,7 @@ export function AdminControls() {
               <div className="bg-slate-700/50 rounded-lg p-4 border border-slate-600">
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-2">
-                    <Building2 className="w-5 h-5 text-blue-400" />
+                    <Warehouse className="w-5 h-5 text-blue-400" />
                     <span className="text-sm font-medium text-white">SAP ERP</span>
                   </div>
                   <span className="text-xs text-green-400 flex items-center gap-1">
