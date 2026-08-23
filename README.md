@@ -6,6 +6,8 @@
 
 LOGICORTEX AI is an AI-powered logistics resilience and execution platform designed to transform traditional supply-chain operations from **reactive monitoring systems into predictive, adaptive and continuously learning networks**.
 
+## LINK : https://logicortex-ai-global-logistics-supp-eight.vercel.app/ 
+
 
 ---
 
