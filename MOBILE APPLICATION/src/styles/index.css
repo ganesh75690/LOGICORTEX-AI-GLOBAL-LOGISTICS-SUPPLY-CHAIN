@@ -1,0 +1,47 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+@import 'leaflet/dist/leaflet.css';
+
+/* Center the app on all screens by default */
+html, body {
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: #f5f5f5 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 100vh !important;
+  display: flex !important;
+}
+
+#root {
+  width: 375px !important;
+  height: 812px !important;
+  border-radius: 20px !important;
+  border: 1px solid #ddd !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2) !important;
+  background-color: white !important;
+  overflow: hidden !important;
+}
+
+/* Mobile override - make fullscreen on smaller screens */
+@media (max-width: 480px) {
+  html, body {
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    background-color: #09090b !important;
+  }
+  
+  #root {
+    width: 100vw !important;
+    height: 100vh !important;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: #09090b !important;
+  }
+}
+
+.progress-bar {
+  width: var(--progress-width, 0%);
+}

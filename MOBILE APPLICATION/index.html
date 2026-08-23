@@ -1,0 +1,74 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Logicortex AI</title>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+      <style>
+        /* Mobile-first approach - mobile styles by default */
+        html, body { 
+          height: 100%; 
+          margin: 0; 
+          padding: 0;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          background-color: #09090b;
+        }
+        #root { 
+          width: 100vw;
+          height: 100vh;
+          border-radius: 0;
+          border: none;
+          overflow: hidden;
+          box-shadow: none;
+          background-color: #09090b;
+        }
+        
+        /* Desktop styles as exception - only on large screens */
+        @media (min-width: 1024px) {
+          html, body {
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+          }
+          #root {
+            width: 375px;
+            height: 812px;
+            max-width: 100vw;
+            max-height: 100vh;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            background-color: white;
+          }
+        }
+        
+        /* Tablet styles */
+        @media (min-width: 769px) and (max-width: 1023px) {
+          #root {
+            width: 100%;
+            max-width: 768px;
+            height: 100vh;
+            border-radius: 0;
+            border: none;
+            box-shadow: none;
+          }
+        }
+      </style>
+      <script>
+        // Detect if mobile and add mobile class
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768) {
+          document.documentElement.classList.add('mobile-device');
+        }
+      </script>
+    </head>
+
+    <body>
+      <div id="root"></div>
+      <script type="module" src="/src/main.tsx"></script>
+    </body>
+  </html>
+  
